@@ -1,0 +1,29 @@
+a.main-link {
+  text-decoration: none;
+  color: $redColor;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  @media #{$maxSmall} {
+    justify-content: center;
+  }
+  &::after {
+    content: "\f054";
+    position: absolute;
+    position: absolute;
+    font-size: 12px;
+    margin: 0;
+    font-weight: 900;
+    font-family: "fontAwesome";
+    left: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    @media #{$maxSmall} {
+      width: fit-content;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+}
+
+.rower {
+  display: flex;
+  @media #{$maxSmall} {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .column-4 {
+    @media #{$maxSmall} {
+      width: 100%;
+    }
+  }
+  .column-6 {
+    @media #{$maxSmall} {
+      width: 100%;
+    }
+  }
+  .column-3 {
+    @media #{$maxSmall} {
+      width: 100%;
+    }
+  }
+}
+
+.text-align-xs {
+  @media #{$maxMobile} {
+    text-align: center;
+  }
+}
+
+@for $i from 1 through $gridColumns {
+  .column-#{$i} {
+    width: percentage($i / $gridColumns);
+    float: $float-left;
+  }
+}

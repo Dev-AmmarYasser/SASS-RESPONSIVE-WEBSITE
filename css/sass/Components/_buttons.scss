@@ -1,0 +1,13 @@
+.toggler {
+  font-size: 25px;
+  top: 10px;
+  cursor: pointer;
+  &:hover {
+    color: $redColor;
+    transition: 0.3s;
+  }
+  @media #{$maxMobile} {
+    position: absolute;
+    right: 10px;
+  }
+}

@@ -1,0 +1,82 @@
+.header {
+  padding: 20px 0;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  .container {
+    overflow: hidden;
+    flex-direction: column;
+    gap: 20px;
+    @media #{$maxMobile} {
+      margin-top: 10px !important;
+      align-items: start !important;
+    }
+    .logo {
+      width: 30%;
+      float: $float-left;
+      @media #{$maxSmall} {
+        text-align: center;
+      }
+      @media #{$maxMobile} {
+        text-align: start;
+      }
+      h1 {
+        margin-bottom: 5px;
+        font-size: 35px;
+        letter-spacing: -2.5px;
+        @media #{$maxSmall} {
+          font-size: 30px;
+        }
+      }
+      p {
+        @media #{$maxSmall} {
+          font-size: 12px;
+          margin: 0;
+        }
+      }
+    }
+    .navbar {
+      &.burgered {
+        display: flex;
+        width: 100%;
+        width: 100%;
+        flex-direction: column;
+        transition: 0.3s;
+      }
+      width: 70%;
+      float: $float-left;
+      background-color: $redColor;
+      border-radius: 15px;
+      @media #{$maxSmall} {
+        width: 100%;
+      }
+      @media #{$maxMobile} {
+        display: none;
+      }
+      li {
+        float: $float-left;
+        width: 20%;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        @media #{$maxMobile} {
+          font-size: 14px;
+          width: 100%;
+          text-align: left;
+          padding: 5px 10px;
+        }
+        a {
+          display: block;
+          padding: 10px 5px;
+          @media #{$maxSmall} {
+            padding: 5px 5px;
+          }
+          color: #fff;
+          transition: 0.3s;
+          &:hover {
+            color: rgb(255 255 255 / 80%);
+          }
+        }
+      }
+    }
+  }
+}

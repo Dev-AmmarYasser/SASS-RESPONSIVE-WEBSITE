@@ -1,0 +1,73 @@
+@import "../sass/helpers/variabels";
+
+@import "../sass/helpers/mixins";
+
+@import "../sass/Components/headings";
+
+@import "../sass/Components/links";
+
+@import "../sass/layout/grid";
+
+@import "../sass/pages/globalpage";
+
+@import "../sass/layout/header";
+
+@import "../sass/pages/homepage";
+
+@import "../sass/layout/footer";
+
+@import "../sass/Components/buttons";
+
+$float-left: right;
+$float-right: left;
+
+$carouselDirection: row-reverse;
+
+// .slider {
+//   .carousel {
+//     .carousel-indicators {
+//       flex-direction: $carouselDirection;
+//     }
+//   }
+// }
+
+.toggler {
+  @media #{$maxMobile} {
+    position: absolute;
+    margin-right: calc(100% - 50px);
+  }
+}
+
+.header {
+  .container {
+    .logo {
+      float: $float-left;
+    }
+    .navbar {
+      float: $float-left;
+      li {
+        float: $float-left;
+      }
+    }
+  }
+}
+
+/* Start Slider */
+
+/* End Slider */
+
+/* Start Slider */
+
+/* End Slider */
+
+/* Start Players */
+
+/* End Players */
+
+/* Start Lorem */
+
+/* End Lorem */
+
+/* Start Footer */
+
+/* End Footer */
